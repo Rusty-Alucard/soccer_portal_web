@@ -27,6 +27,8 @@ module.exports = {
   'rules': {
     'semi': ['error', 'never'],
     'eol-last': ['error', 'always'],
+    'object-curly-spacing': ['error', 'always'],
+    'indent': ['error', 2],
     'require-jsdoc': ['off'],
     'spaced-comment': ['off'],
   },
