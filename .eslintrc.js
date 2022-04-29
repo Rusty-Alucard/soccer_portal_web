@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'next/core-web-vitals',
     'google',
+    'plugin:storybook/recommended',
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
@@ -17,10 +18,7 @@ module.exports = {
     'ecmaVersion': 'latest',
     'sourceType': 'module',
   },
-  'plugins': [
-    'react',
-    'react-hooks',
-  ],
+  'plugins': ['react', 'react-hooks'],
   'rules': {
     'semi': ['error', 'never'],
     'eol-last': ['error', 'always'],
@@ -36,9 +34,7 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
       ],
-      'plugins': [
-        '@typescript-eslint',
-      ],
+      'plugins': ['@typescript-eslint'],
     },
   ],
 }
