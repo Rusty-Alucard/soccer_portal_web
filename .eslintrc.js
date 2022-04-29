@@ -5,8 +5,6 @@ module.exports = {
   },
   'extends': [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'next/core-web-vitals',
     'google',
@@ -22,7 +20,6 @@ module.exports = {
   'plugins': [
     'react',
     'react-hooks',
-    '@typescript-eslint',
   ],
   'rules': {
     'semi': ['error', 'never'],
@@ -32,4 +29,16 @@ module.exports = {
     'require-jsdoc': ['off'],
     'spaced-comment': ['off'],
   },
+  'overrides': [
+    {
+      'files': ['*.ts', '*.tsx'],
+      'extends': [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
+      'plugins': [
+        '@typescript-eslint',
+      ],
+    },
+  ],
 }
