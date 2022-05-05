@@ -1,5 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Rusty-Alucard/soccer_portal_web/badge.svg?branch=setting/circleci_step2)](https://coveralls.io/github/Rusty-Alucard/soccer_portal_web?branch=setting/circleci_step2)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/246a86db8fed4f2257cc/maintainability)](https://codeclimate.com/github/Rusty-Alucard/soccer_portal_web/maintainability)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
