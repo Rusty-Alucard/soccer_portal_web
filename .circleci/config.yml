@@ -31,6 +31,8 @@ jobs:
           command: yarn chromatic --project-token=${CHROMATIC_PROJECT_TOKEN}
   test:
     executor: node
+    parallelism: 4
+    resource_class: small
     steps:
       - checkout
       - restore_modules
@@ -39,7 +41,9 @@ jobs:
           command: yarn install
       - run:
          name: unit test
-         command: yarn test
+         command: |
+          TEST=$(circleci tests glob "src/__tests__/*.js" | circleci tests split --split-by=timings)
+          yarn test $TEST
       - run:
           name: post coverage
           command: cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
